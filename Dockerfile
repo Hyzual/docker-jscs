@@ -1,8 +1,9 @@
 ## Dockerfile for jscs
-FROM nubs/npm-onbuild:latest
+FROM leanlabs/npm-builder:latest
 MAINTAINER Hyzual "hyzual@gmail.com"
 
-USER build
+RUN npm install -g jscs@^1.13.1 \
+    && mkdir -p /lint
 
-ENTRYPOINT ["/code/node_modules/.bin/jscs"]
-WORKDIR /code/lint
+ENTRYPOINT ["/usr/bin/jscs"]
+WORKDIR /lint

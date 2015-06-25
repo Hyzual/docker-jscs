@@ -1,17 +1,19 @@
 # docker-jscs
 
+[![](https://badge.imagelayers.io/hyzual/jscs:latest.svg)](https://imagelayers.io/?images=hyzual/jscs:latest 'Get your own badge on imagelayers.io')
+
 A Dockerfile for the [JSCS][jscs] (JavaScript Code Style) linter.
 
 Use the following command to run it :
 
 ```bash
-sudo docker run --rm -it -v $(pwd):/code/lint hyzual/jscs
+sudo docker run --rm -it -v $(pwd):/lint hyzual/jscs path/to/folder/to/lint
 ```
 
-It expects the code to lint to be in the `/code/lint` folder. You can pass [JSCS CLI arguments][jscs-cli-options] directly to the container, e.g.
+It expects the code to lint to be in the `/lint` folder. You can pass [JSCS CLI arguments][jscs-cli-options] directly to the container, e.g.
 
 ```bash
-sudo docker run --rm -it -v $(pwd):/code/lint hyzual/jscs --verbose
+sudo docker run --rm -it -v $(pwd):/lint hyzual/jscs path/to/folder/to/lint --verbose
 ```
 
 ## JSCS (JavaScript Code Style)

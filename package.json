@@ -1,0 +1,25 @@
+{
+  "name": "docker-jscs",
+  "version": "1.0.0",
+  "description": "Docker container for jscs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jscs",
+    "docker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyzual/docker-jscs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hyzual/docker-jscs/issues"
+  },
+  "author": "Hyzual (https://github.com/Hyzual)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jscs": "^1.13.1"
+  }
+}
